@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 23 00:07:43 IST 2020</td>
+<td>Started on:</td><td>Mon Nov 23 20:31:03 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (199 ms)</td>
+<tr><td>Total time:</td><td>12 seconds (12883 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,16 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='assessmentpackage.TC_02Test.validate_error_msg()'><b>validate_error_msg</b><br>Test class: assessmentpackage.TC_02Test</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;this.cls_signin_icon&quot; is null
-	at assessmentpackage.login_signup_bug.validate_error_message(login_signup_bug.java:49)
+<td><div><pre>java.lang.AssertionError: Error message is displayed when email ID is invalid during sign in expected [false] but found [true]
+	at assessmentpackage.login_signup_bug.validate_error_message(login_signup_bug.java:82)
 	at assessmentpackage.TC_02Test.validate_error_msg(TC_02Test.java:20)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1177072083", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1177072083'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;this.cls_signin_icon&quot; is null
-	at assessmentpackage.login_signup_bug.validate_error_message(login_signup_bug.java:49)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace746228466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace746228466'><pre>java.lang.AssertionError: Error message is displayed when email ID is invalid during sign in expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertFalse(Assert.java:67)
+	at assessmentpackage.login_signup_bug.validate_error_message(login_signup_bug.java:82)
 	at assessmentpackage.TC_02Test.validate_error_msg(TC_02Test.java:20)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -113,8 +116,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>assessmentpackage.TC_02Test@48974e45</td></tr>
+<td>12</td>
+<td>assessmentpackage.TC_02Test@3059cbc</td></tr>
 </table><p>
 </body>
 </html>
