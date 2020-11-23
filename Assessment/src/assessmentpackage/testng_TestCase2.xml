@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Assessment">
+	<test name="Login and create account error message">
+		<classes>
+			<class name="assessmentpackage.TC_02Test">
+				<methods>
+					<include name="validate_error_msg" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
