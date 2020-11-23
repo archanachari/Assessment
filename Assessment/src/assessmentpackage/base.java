@@ -9,10 +9,11 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class base {
 
@@ -38,14 +39,13 @@ public class base {
 	public static void initialization() {
 		String browserName = prop.getProperty("browser");
 		if (browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Archana Chari\\Downloads\\chromedriver_win32\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
+		//	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Archana Chari\\Downloads\\chromedriver_win32\\chromedriver.exe");
 			driver = new ChromeDriver();
 
-		} else if (browserName.equalsIgnoreCase("FF")) {
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\preet\\Downloads\\geckodriver\\geckodriver.exe");
-			driver = new FirefoxDriver();
 		} else if (browserName.equalsIgnoreCase("ie")) {
-			System.setProperty("webdriver.ie.driver", prop.getProperty("IEdriverpath"));
+			WebDriverManager.iedriver().setup();
+			//System.setProperty("webdriver.ie.driver", "C:\\Users\\Archana Chari\\Downloads\\IEDriverServer_x64_3.150.1\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		}
 		driver.get(prop.getProperty("url"));

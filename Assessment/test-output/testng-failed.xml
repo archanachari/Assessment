@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Assessment]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Search_add_remvoe_checkout(failed)">
+  <test thread-count="5" name="Login and create account error message(failed)">
     <classes>
-      <class name="assessmentpackage.TC_01Test">
+      <class name="assessmentpackage.TC_02Test">
         <methods>
-          <include name="validate_removeitems"/>
+          <include name="validate_error_msg"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="driverquit"/>
         </methods>
-      </class> <!-- assessmentpackage.TC_01Test -->
+      </class> <!-- assessmentpackage.TC_02Test -->
     </classes>
-  </test> <!-- Search_add_remvoe_checkout(failed) -->
+  </test> <!-- Login and create account error message(failed) -->
 </suite> <!-- Failed suite [Assessment] -->

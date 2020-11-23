@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Assessment" class="navigator-link">
-              <span class="suite-name border-passed">Assessment</span>
+              <span class="suite-name border-failed">Assessment</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Assessment" class="navigator-link ">
-                    <span>C:\Users\Archana Chari\eclipse-workspace\Assessment\src\assessmentpackage\testng_TestCase1.xml</span>
+                    <span>C:\Users\Archana Chari\git\Assessment\Assessment\src\assessmentpackage\testng_TC_02.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,36 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Assessment" class="hide-methods passed suite-Assessment"> (hide)</a> <!-- hide-methods passed suite-Assessment -->
-                      <a href="#" panel-name="suite-Assessment" class="show-methods passed suite-Assessment"> (show)</a> <!-- show-methods passed suite-Assessment -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Assessment" class="hide-methods failed suite-Assessment"> (hide)</a> <!-- hide-methods failed suite-Assessment -->
+                      <a href="#" panel-name="suite-Assessment" class="show-methods failed suite-Assessment"> (show)</a> <!-- show-methods failed suite-Assessment -->
                     </span>
-                    <div class="method-list-content passed suite-Assessment">
+                    <div class="method-list-content failed suite-Assessment">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Assessment" title="assessmentpackage.TC_01Test" class="method navigator-link" hash-for-method="validate_cart">validate_cart</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Assessment" title="assessmentpackage.TC_02Test" class="method navigator-link" hash-for-method="validate_error_msg">validate_error_msg</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Assessment" title="assessmentpackage.TC_01Test" class="method navigator-link" hash-for-method="validate_chkout">validate_chkout</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Assessment" title="assessmentpackage.TC_01Test" class="method navigator-link" hash-for-method="validate_removeitems">validate_removeitems</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Assessment" title="assessmentpackage.TC_01Test" class="method navigator-link" hash-for-method="validate_search_button">validate_search_button</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Assessment -->
+                    </div> <!-- method-list-content failed suite-Assessment -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -134,64 +119,46 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Assessment" class="panel Assessment">
-          <div class="suite-Assessment-class-passed">
+          <div class="suite-Assessment-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">assessmentpackage.TC_01Test</span>
+              <img src="failed.png"/>
+              <span class="class-name">assessmentpackage.TC_02Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validate_cart">
-                  </a> <!-- validate_cart -->
-                  <span class="method-name">validate_cart</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validate_chkout">
-                  </a> <!-- validate_chkout -->
-                  <span class="method-name">validate_chkout</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validate_removeitems">
-                  </a> <!-- validate_removeitems -->
-                  <span class="method-name">validate_removeitems</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validate_search_button">
-                  </a> <!-- validate_search_button -->
-                  <span class="method-name">validate_search_button</span>
+                  <a name="validate_error_msg">
+                  </a> <!-- validate_error_msg -->
+                  <span class="method-name">validate_error_msg</span>
+                  <div class="stack-trace">java.lang.AssertionError: Error message is displayed when email ID is invalid during sign in expected [false] but found [true]
+	at assessmentpackage.login_signup_bug.validate_error_message(login_signup_bug.java:82)
+	at assessmentpackage.TC_02Test.validate_error_msg(TC_02Test.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Assessment-class-passed -->
+          </div> <!-- suite-Assessment-class-failed -->
         </div> <!-- panel Assessment -->
         <div panel-name="test-xml-Assessment" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Archana Chari\eclipse-workspace\Assessment\src\assessmentpackage\testng_TestCase1.xml</span>
+            <span class="header-content">C:\Users\Archana Chari\git\Assessment\Assessment\src\assessmentpackage\testng_TC_02.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Assessment&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Search_add_remvoe_checkout&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login and create account error message&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;assessmentpackage.TC_01Test&quot;&gt;
+      &lt;class name=&quot;assessmentpackage.TC_02Test&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;validate_search_button&quot;/&gt;
-          &lt;include name=&quot;validate_cart&quot;/&gt;
-          &lt;include name=&quot;validate_removeitems&quot;/&gt;
-          &lt;include name=&quot;validate_chkout&quot;/&gt;
+          &lt;include name=&quot;validate_error_msg&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- assessmentpackage.TC_01Test --&gt;
+      &lt;/class&gt; &lt;!-- assessmentpackage.TC_02Test --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Search_add_remvoe_checkout --&gt;
+  &lt;/test&gt; &lt;!-- Login and create account error message --&gt;
 &lt;/suite&gt; &lt;!-- Assessment --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -203,7 +170,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Search_add_remvoe_checkout (1 class)</span>
+                <span class="test-name">Login and create account error message (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -229,28 +196,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validate_cart')
-data.setCell(0, 2, 'assessmentpackage.TC_01Test')
-data.setCell(0, 3, 36050);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validate_search_button')
-data.setCell(1, 2, 'assessmentpackage.TC_01Test')
-data.setCell(1, 3, 20777);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validate_chkout')
-data.setCell(2, 2, 'assessmentpackage.TC_01Test')
-data.setCell(2, 3, 5141);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validate_removeitems')
-data.setCell(3, 2, 'assessmentpackage.TC_01Test')
-data.setCell(3, 3, 3532);
+data.setCell(0, 1, 'validate_error_msg')
+data.setCell(0, 2, 'assessmentpackage.TC_02Test')
+data.setCell(0, 3, 12808);
 window.suiteTableData['Assessment']= { tableData: data, tableDiv: 'times-div-Assessment'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Assessment">
               </div> <!-- times-div-Assessment -->
             </div> <!-- times-div -->
@@ -276,30 +231,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">assessmentpackage.TC_01Test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">assessmentpackage.TC_02Test</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">validate_search_button</span>
-                <span class="method-start">14851 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">validate_cart</span>
-                <span class="method-start">35642 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">validate_removeitems</span>
-                <span class="method-start">71696 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">validate_chkout</span>
-                <span class="method-start">75231 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validate_error_msg</span>
+                <span class="method-start">47145 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
-                <span class="method-name">driverquit</span>
-                <span class="method-start">80529 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">60658 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
