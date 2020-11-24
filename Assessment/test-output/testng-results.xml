@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-23T20:31:03 IST" name="Assessment" finished-at="2020-11-23T20:31:16 IST" duration-ms="12883">
+  <suite started-at="2020-11-23T22:05:36 IST" name="Assessment" finished-at="2020-11-23T22:05:53 IST" duration-ms="17761">
     <groups>
     </groups>
-    <test started-at="2020-11-23T20:31:03 IST" name="Login and create account error message" finished-at="2020-11-23T20:31:16 IST" duration-ms="12883">
+    <test started-at="2020-11-23T22:05:36 IST" name="Login and create account error message" finished-at="2020-11-23T22:05:53 IST" duration-ms="17761">
       <class name="assessmentpackage.TC_02Test">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:assessmentpackage.TC_02Test@3059cbc]" started-at="2020-11-23T20:30:16 IST" name="setUp" finished-at="2020-11-23T20:31:03 IST" duration-ms="47084" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:assessmentpackage.TC_02Test@3059cbc]" started-at="2020-11-23T22:04:19 IST" name="setUp" finished-at="2020-11-23T22:05:36 IST" duration-ms="76696" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validate_error_msg()[pri:0, instance:assessmentpackage.TC_02Test@3059cbc]" started-at="2020-11-23T20:31:03 IST" name="validate_error_msg" finished-at="2020-11-23T20:31:16 IST" duration-ms="12808" status="FAIL">
+        <test-method signature="validate_error_msg()[pri:0, instance:assessmentpackage.TC_02Test@3059cbc]" started-at="2020-11-23T22:05:36 IST" name="validate_error_msg" finished-at="2020-11-23T22:05:53 IST" duration-ms="17609" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Error message is displayed when email ID is invalid during sign in expected [false] but found [true]]]>
+              <![CDATA[Error message is displayed when email ID is invalid while creating an account expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message is displayed when email ID is invalid during sign in expected [false] but found [true]
+              <![CDATA[java.lang.AssertionError: Error message is displayed when email ID is invalid while creating an account expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertFalse(Assert.java:67)
-at assessmentpackage.login_signup_bug.validate_error_message(login_signup_bug.java:82)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at assessmentpackage.login_signup_bug.validate_error_message(login_signup_bug.java:79)
 at assessmentpackage.TC_02Test.validate_error_msg(TC_02Test.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -57,7 +57,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_error_msg -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:assessmentpackage.TC_02Test@3059cbc]" started-at="2020-11-23T20:31:17 IST" name="tearDown" finished-at="2020-11-23T20:31:18 IST" duration-ms="1195" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:assessmentpackage.TC_02Test@3059cbc]" started-at="2020-11-23T22:05:54 IST" name="tearDown" finished-at="2020-11-23T22:05:56 IST" duration-ms="1749" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

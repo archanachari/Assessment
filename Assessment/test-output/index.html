@@ -130,8 +130,8 @@
                   <a name="validate_error_msg">
                   </a> <!-- validate_error_msg -->
                   <span class="method-name">validate_error_msg</span>
-                  <div class="stack-trace">java.lang.AssertionError: Error message is displayed when email ID is invalid during sign in expected [false] but found [true]
-	at assessmentpackage.login_signup_bug.validate_error_message(login_signup_bug.java:82)
+                  <div class="stack-trace">java.lang.AssertionError: Error message is displayed when email ID is invalid while creating an account expected [true] but found [false]
+	at assessmentpackage.login_signup_bug.validate_error_message(login_signup_bug.java:79)
 	at assessmentpackage.TC_02Test.validate_error_msg(TC_02Test.java:20)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 30 stack frames
@@ -200,12 +200,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validate_error_msg')
 data.setCell(0, 2, 'assessmentpackage.TC_02Test')
-data.setCell(0, 3, 12808);
+data.setCell(0, 3, 17609);
 window.suiteTableData['Assessment']= { tableData: data, tableDiv: 'times-div-Assessment'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Assessment">
               </div> <!-- times-div-Assessment -->
             </div> <!-- times-div -->
@@ -240,11 +240,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validate_error_msg</span>
-                <span class="method-start">47145 ms</span>
+                <span class="method-start">76829 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">60658 ms</span>
+                <span class="method-start">95214 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
